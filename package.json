@@ -1,0 +1,35 @@
+{
+  "name": "smartschool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SmartSchool — maktab uchun onlayn platforma (o'quvchi, ustoz, ota-ona, ma'muriyat)",
+  "scripts": {
+    "predev": "tsx scripts/seed.ts --if-missing",
+    "dev": "next dev",
+    "prebuild": "tsx scripts/seed.ts --if-missing",
+    "build": "next build",
+    "start": "next start",
+    "seed": "tsx scripts/seed.ts --force",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
